@@ -9,6 +9,14 @@
 //  --     Decrement(уменьшение на -1)A=10; A-- = 9
 //  
 
+//Operator      Example     Same As     Result in x
+//=             x = y       x = y       x = 5
+//+=            x += y      x = x + y   x = 15
+//-=            x -= y      x = x - y   x = 5
+//*=            x *= y      x = x * y   x = 50
+///=            x /= y      x = x / y   x = 2
+//%=            x %= y      x = x % y   x = 0
+
 // Некоторые особенные действия в JS
 let a = 7;
 let b = 2;
@@ -94,7 +102,7 @@ console.log(bool1 + ' ' + bool2); // - true, false
 let z = '5';//string
 let x = -10;
 let y = "y";
-let v = "V";
+let Y = "Y";
 let m = "0";
 
 console.log(z);
@@ -103,7 +111,23 @@ console.log(z === 5);//false
 console.log(x);
 console.log(x != -10); //false
 console.log(x !== -10);//true
-console.log(y == Y);
+console.log(y == Y); //false
 console.log(y === y);
 console.log();
 console.log();
+
+//Logical operators 
+//  || (или), && (И), !(НЕ)
+//Приоритет && выше чем ||, так что он выполняется первым 
+
+let massaKg = 70;
+console.log(massaKg > 50 || massaKg > 90);
+console.log(!(massaKg < 50 || massaKg > 60));
+
+console.log(true && true); //true
+console.log(false && true);//false
+console.log(true && false);//false
+console.log(false && false)//false
+
+console.log(massaKg > 50 && massaKg < 90);//true
+console.log(!true); //false

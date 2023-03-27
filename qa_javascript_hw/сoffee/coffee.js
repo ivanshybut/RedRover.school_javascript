@@ -19,5 +19,9 @@ let result = "Enjoy your coffee";
 
 document.write(order + '<br>' + '<br>' + step1 + '<br>' + step2 + '<br>' + step3 + '<br>' + step4 + '<br>' + step5 + '<br>' + orderPrice + '<br>' + '<br>' + result) 
 
+//
+
+
+
 
 

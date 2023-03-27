@@ -31,8 +31,40 @@ else console.log('Please, enter correct number!')
 
 //3. Улитка ползет по стене вверх высотой 5 метров. Каждый день она проползает вверх на 3 метра, а каждую ночь она съезжает вниз на 2 метра. За сколько дней она доползет до вершины стены. 
 
-let dayDistonce = 5
-let nightDown = 3
+let dayDistance = 3
+let nightDown = -2
 let distance = 0
 let days = 0
+let wall = 5
 
+if ((distance += dayDistance) <= wall) {
+    days ++
+    console.log(` - Current distance at the end of the day for day ${days} is ${distance} meter (s)`)
+
+    distance += nightDown
+}
+if ((distance += dayDistance) <= wall) {
+    days ++
+    console.log(`  Current distance at the end of the day for day ${days} is ${distance} meter (s)`)
+
+    distance += nightDown
+}
+if ((distance += dayDistance) <= wall) {
+    days ++
+    console.log(` - Current distance at the end of the day for day ${days} is ${distance} meter (s)`)
+
+    distance += nightDown
+}
+if ((distance += dayDistance) <= wall) {
+    days ++
+    console.log(` - Current distance at the end of the day for day ${days} is ${distance} meter (s)`)
+
+    distance += nightDown
+}
+if ((distance += dayDistance) <= wall) {
+    days ++
+    console.log(` - Current distance at the end of the day for day ${days} is ${distance} meter (s)`)
+
+    distance += nightDown
+}
+else console.log('Finish')

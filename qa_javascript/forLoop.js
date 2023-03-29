@@ -54,3 +54,68 @@ for (let i = 1; i <= 3; i ++) {    // i = 2 result = 5 * 5 = 25
 console.log(result);
 
 
+//   ===== While loop (до тех пор, пока)
+
+// while (условие) {
+//     блок
+// }
+
+let i = 0;
+while (i < 3) {
+    console.log(i);
+    i ++;
+}
+
+//
+
+let j = 7;
+while (j != 0) {
+    console.log(j);
+    j --;
+}
+
+//
+
+const fruits = ['apple', 'banana' , 'pear', 'grape'];
+let index = 0;
+while (index < fruits.length) {
+    console.log(fruits[index]);
+    index ++;
+}
+
+
+// do....while
+
+let k = 0;
+do {
+    console.log(k);
+    k ++;
+
+} while (k < 3);
+
+
+// ======       break , continue
+//break - полностью прекращает цикл.
+//continue - прерывает текущую итерацию циклов и продолжает выполнение цикла со следуюшей итерации.
+
+for (let i = 0; i <= 10; i ++) {
+    if (i == 7) break;
+    console.log(i);
+}
+//
+for (let i = 0; i <= 100; i ++) {
+    if (i % 2 === 0) continue;
+    console.log(i);
+}
+
+
+//      ====== FOR IN
+
+const numbers = [45, 4, 12, 4, 36, 86];
+
+let txt = '';
+for (let el in numbers) {
+    txt += numbers[el];
+    console.log(numbers[el]);
+}
+console.log(txt);

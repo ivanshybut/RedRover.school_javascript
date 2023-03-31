@@ -104,3 +104,4 @@ for (let i = 1; i <= x; i ++) {
     romb += '\n'
 }
 console.log(romb);
+//===7

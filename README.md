@@ -1,2 +1,2 @@
 # RedRoverschool - javascript
-## Курс по javascript для qa automatiom engineer, от школы RedRoverSchool.
+## Курс по javascript для qa automation engineer, от школы RedRoverSchool.

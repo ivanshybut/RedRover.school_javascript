@@ -36,4 +36,17 @@ console.log(sum(2,3))
 
 //
 
+// test 5
+let arr = ['red', 43, 1, 66, 2, ' big', 4, 'car']
 
+
+function createArreyOfNumbers (array){
+    let arrNew = []
+    for (let i = 0; i < array.length; i ++) {
+        if (typeof array[i] == 'number'){
+        arrNew.push(arr[i]);
+        }
+    }
+    return arrNew
+}
+console.log(createArreyOfNumbers(arr));

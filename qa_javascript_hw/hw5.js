@@ -21,8 +21,10 @@ function showCupOptions (){
     }
    }
 }
-//опять проблемы в git push
-//пробуем решить проблему дальше 
-//попытка номер 3, пробую git pull
+// git add .
+// git commit -m
+// git pull
+// git push
+
 
     

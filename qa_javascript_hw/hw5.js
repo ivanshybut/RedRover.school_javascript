@@ -22,5 +22,6 @@ function showCupOptions (){
    }
 }
 //опять проблемы в git push
+//пробуем решить проблему дальше 
 
     

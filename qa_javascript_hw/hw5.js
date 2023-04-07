@@ -26,5 +26,17 @@ function showCupOptions (){
 // git pull
 // git push
 
+function showCoffeeTypesWithIngridients (){
+    let latte = 'Latte'
+    let iceCoffee = 'Ice Coffee'
+    let beansArabica = 'Arabica Grounds Beans'
+    let beansEthiopian = 'Ethiopian Grounds Beans'
+    let hotWater = 'Hot Water'
+    let coldWater = 'Cold Water'
+
+    let latteIngridients = `${latte}:\n 1 spoon of ${beansArabica} \n ${hotWater} \n milk \n`
+    
+
+}
 
     

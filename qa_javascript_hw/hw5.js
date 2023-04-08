@@ -26,7 +26,7 @@ function showCupOptions (){
 // git pull
 // git push
 
-function showCoffeeTypesWithIngridients (){
+function showCoffeeTypesAndIngridients (){
     let latte = 'Latte'
     let iceCoffee = 'Ice Coffee'
     let beansArabica = 'Arabica Grounds Beans'
@@ -35,8 +35,23 @@ function showCoffeeTypesWithIngridients (){
     let coldWater = 'Cold Water'
 
     let latteIngridients = `${latte}:\n 1 spoon of ${beansArabica} \n ${hotWater} \n milk \n`
-    
+    let iceCoffeeIngridients = `${iceCoffee}: \n 1 spoon of ${beansEthiopian} \n ${coldWater} \n milk \n`
+
+    console.log('We have following coffee types. Please choose one!: \n');
+    let menu = [latteIngridients, iceCoffeeIngridients]
+
+    for (let i = 0; i < menu.length; i ++){ 
+        console.log(menu[i]);
+    }
+
 
 }
 
     
+function setWaterForCoffee (coffeeType){
+    if (coffeeType.toLowerCase() = 'ice coffee'){
+        return water = 'cold water'
+    } else {
+        return water = 'hot water'
+    }
+} 

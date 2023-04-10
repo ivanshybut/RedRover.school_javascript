@@ -55,3 +55,25 @@ function setWaterForCoffee (coffeeType){
         return water = 'hot water'
     }
 } 
+
+function getCupPrice(cupSize){
+    let price = 5
+    if (cupSize == 'small'){
+        return price
+    }
+    else if (cupSize == 'medium'){
+        return price *= 1.5
+    }
+    else if( cupSize == 'large'){
+        return price *=2
+    }
+}
+
+function showRecipeToClient (cupSize, coffeeType, isLactoseFree, milk = 'half&half'){
+    let water = setWaterForCoffee(coffeeType)
+    price = getCupPrice(cupSize)
+
+}
+
+
+

@@ -1,0 +1,1 @@
+// Методы pop/push, shift/unshift

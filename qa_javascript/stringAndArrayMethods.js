@@ -47,3 +47,22 @@ console.log(array);
 
 let newStringFromArray = array.join(' ')
 console.log(newArrayFromString);
+
+
+// объединение массивов
+// concat()
+
+leters = ['a', 'b', 'c', 'd']
+const bigLeters = ['A', 'B', 'C', 'D']
+let v = leters + ' ' + bigLeters
+console.log(leters + ' ' + bigLeters);
+console.log(typeof v); // => получается строка, так массив не складывать
+
+let girls = ['Samanta', 'Anna', 'Kate']
+let boys = ['John', 'Sam', 'Lukas']
+
+const children = girls.concat(boys) // => правильное сложение массива
+console.log(children);
+console.log(typeof children);    
+
+

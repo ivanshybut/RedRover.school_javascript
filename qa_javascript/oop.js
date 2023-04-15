@@ -16,3 +16,9 @@ let animal1 = new animal('tiger')
 let animal2 = new animal('salmon', 'blue')
 
 console.log(animal1.name);
+
+
+//Инкапсуляция
+//Наследование
+//полиморфизм
+//абстракция 

@@ -78,6 +78,20 @@ class Students extends Person{
 let students = new Students('Luke')
 students.greet()
 console.log(students.occupation);
+console.log('============================');
+
+//
+let newObj = {
+    name: "Ivan",
+    age: 30,
+    occupation: "QA",
+    introduse: function(){
+        console.log(`Hello, I'm ${this.name}`);
+        console.log(`I'm a ${this.occupation}`);
+    }
+
+}
+console.log(newObj);
 
 
 

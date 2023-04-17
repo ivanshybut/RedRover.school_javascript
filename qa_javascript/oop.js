@@ -92,6 +92,30 @@ let newObj = {
 
 }
 console.log(newObj);
+console.log('============================');
+
+// ===================Prototype __proto__
+let obj = {
+    name: 'Ivan',
+    age: 30,
+    show(){
+        return (`Name: ${this.name}, age: ${this.age}`)
+    }
+    // show: function(){
+    //     return (`Name: ${this.name}, age: ${this.age}`)
+    // }
+}
+
+let obj2 ={
+    __proto__: obj,
+    occupation: 'Teacher',
+}
+
+console.log(obj2);
+console.log(obj2.name);
+console.log(obj.age);
+console.log(obj.show());
+console.log('============================');
 
 
 

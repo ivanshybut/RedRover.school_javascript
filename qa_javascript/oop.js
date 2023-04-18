@@ -117,7 +117,33 @@ console.log(obj.age);
 console.log(obj.show());
 console.log('============================');
 
+// ==========
 
 
+function Human(name, occupation){
+    this.name = name;
+    this.occupation = occupation;
+    this.introduse = function(){
+        console.log(`Hello, I'm ${this.name}`);
+        console.log(`I'm a ${this.occupation}`);
+    }
+}
 
+let person1 = new Human('Anna', 24)
+let person2 = new Human('Ivan', 30)
+console.log(person1);
+console.log(person2);
+console.log('============================');
 
+class Person1{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    introduse(){
+        console.log(`Hello, I'm ${this.name}`);
+        console.log(`I'm a ${this.occupation}`);  
+    }
+}
+let p1 = new Person1('Oleg', 29)
+p1.introduse()

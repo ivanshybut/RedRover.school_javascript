@@ -107,7 +107,7 @@ for (let i = 0; i <= 100; i ++) {
     if (i % 2 === 0) continue;
     console.log(i);
 }
-
+console.log('========================');
 
 //      ====== FOR IN
 
@@ -119,3 +119,4 @@ for (let el in numbers) {
     console.log(numbers[el]);
 }
 console.log(txt);
+console.log('==============================');

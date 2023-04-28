@@ -3,5 +3,5 @@
 ### Installing Cypress:
 
 - `npm init`
-- `npm install cypress --save-dave`
+- `npm install cypress --save-dev`
 - `npx cypress open`

@@ -1,0 +1,15 @@
+{
+  "name": "qa_cypress",
+  "version": "1.0.0",
+  "description": "### Installing Cypress:",
+  "main": "demoQa.cy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ivan Shybut",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.11.0"
+  }
+}

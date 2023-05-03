@@ -1,14 +1,14 @@
 /// <reference types = "cypress"/> 
 
 
-describe ('First test DemoQA', () => {
+describe('First test DemoQA', () => {
     //создаем массив для поиска элементов
-    const expectedMenuItemNames = [ 
-        'Elements', 
-        'Forms', 
-        'Alerts, Frame & Windows', 
-        'Widgets', 
-        'Interactions', 
+    const expectedMenuItemNames = [
+        'Elements',
+        'Forms',
+        'Alerts, Frame & Windows',
+        'Widgets',
+        'Interactions',
         'Book Store Application'];
 
     it('Verification menu item names', () => {
@@ -18,7 +18,7 @@ describe ('First test DemoQA', () => {
         cy.get('.card').should('have.length', expectedMenuItemNames.length).each(($el, idx) => {
             //проверка фактического и ожидаемого результата
             expect($el.text()).to.be.equal(expectedMenuItemNames[idx]);
-            
+
         });
     })
     // второй способ теста с .should, .each

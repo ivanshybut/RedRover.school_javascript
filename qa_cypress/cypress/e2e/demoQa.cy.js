@@ -1,6 +1,5 @@
 /// <reference types = "cypress"/> 
 
-const { should } = require("chai");
 
 describe ('First test DemoQA', () => {
     //создаем массив для поиска элементов
@@ -35,7 +34,7 @@ describe ('First test DemoQA', () => {
 
     //третий способ теста (через промис)
     it('Verification menu item names part 3', () => {
-        cy.get('https://demoqa.com')
+        cy.visit('https://demoqa.com')
         cy.get('.card')
             .should('have.length', expectedMenuItemNames.length)
             .then(($els) => {

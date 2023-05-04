@@ -46,6 +46,11 @@ describe('First test DemoQA', () => {
     it.only('Form filling', () => {
         cy.visit('/')
         cy.get('.card:nth-child(2)').click()
+        cy.get('.element-group:nth-child(2)>div').click()
+        cy.get('#firstName')
+            .should('have.text', '')
+            .type('Ivan')
+            .should('have.value', 'Ivan')
 
     })
 })

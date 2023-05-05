@@ -42,6 +42,8 @@ describe('First test DemoQA', () => {
             })
             .should('deep.equal', expectedMenuItemNames)
     })
+    // форма регистрации
+    // it.only (.only перед it означает, что будет выполняться только этот тест)
 
     it.only('Form filling', () => {
         cy.visit('/')
@@ -51,6 +53,8 @@ describe('First test DemoQA', () => {
             .should('have.text', '')
             .type('Ivan')
             .should('have.value', 'Ivan')
+        cy.get('#submit').click()
+        cy.get('#firstName').should('have.css', 'border-color', 'rgb(40, 167, 69)')
 
     })
 })

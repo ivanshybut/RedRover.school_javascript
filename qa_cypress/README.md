@@ -16,7 +16,7 @@
 }`
 
 
-3. Создать файл `cypress/integration/ui.spec.js` и добавить в него следующий код:
+3. Создать файл cypress/integration/ui.spec.js и добавить в него следующий код:
 
 `describe('UI tests', () => {
   beforeEach(() => {

@@ -18,10 +18,10 @@
 
 3. Создать файл cypress/integration/ui.spec.js и добавить в него следующий код:
 
-`describe('UI tests', () => {`
-  `beforeEach(() => {`
-    `cy.visit('/')`
-  `})`
+`describe('UI tests', () => {
+  beforeEach(() => {
+    cy.visit('/')
+  })`
 
   `it('should display the correct title', () => {
     cy.get('h1').should('have.text', 'My App')

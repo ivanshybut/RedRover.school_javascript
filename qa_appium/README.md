@@ -8,7 +8,7 @@
 
 2. Создать файл конфигурации для Appium:
 
-- ```const wd = require('wd');
+```const wd = require('wd');
 const serverConfig = {
   host: 'localhost',
   port: 4723
@@ -22,6 +22,7 @@ const capabilities = {
 };
 const driver = wd.promiseChainRemote(serverConfig);
 driver.init(capabilities);
+```
 
 3. Написать тесты с использованием Appium:
 

@@ -2,13 +2,13 @@
 
 ### 1. Установить Appium и необходимые зависимости:
 
-`npm install -g appium
-npm install wd`
+- `npm install -g appium`
+- `npm install wd`
 
 
 2. Создать файл конфигурации для Appium:
 
-const wd = require('wd');
+`const wd = require('wd');
 const serverConfig = {
   host: 'localhost',
   port: 4723
@@ -21,7 +21,7 @@ const capabilities = {
   automationName: 'UiAutomator2'
 };
 const driver = wd.promiseChainRemote(serverConfig);
-driver.init(capabilities);
+driver.init(capabilities);` 
 
 
 3. Написать тесты с использованием Appium:

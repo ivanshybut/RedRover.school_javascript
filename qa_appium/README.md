@@ -8,7 +8,7 @@
 
 2. Создать файл конфигурации для Appium:
 
-```const wd = require('wd');
+- ```const wd = require('wd');
 const serverConfig = {
   host: 'localhost',
   port: 4723
@@ -19,13 +19,13 @@ const capabilities = {
   deviceName: 'Android Emulator',
   app: '/path/to/app.apk',
   automationName: 'UiAutomator2'
-};```
+};
 const driver = wd.promiseChainRemote(serverConfig);
 driver.init(capabilities);
 
 3. Написать тесты с использованием Appium:
 
-describe('Login', function() {
+- ```describe('Login', function() {
   it('should login successfully', function() {
     return driver
       .elementById('username')
@@ -43,4 +43,4 @@ describe('Login', function() {
 
 4. Запустить тесты с помощью Mocha:
 
-mocha test.js
+`mocha test.js`

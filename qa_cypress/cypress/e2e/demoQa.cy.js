@@ -13,7 +13,7 @@ describe('First test DemoQA', () => {
 
     it('Verification menu item names', () => {
         //открытие сайта
-        cy.visit('/'); //в cypress.config.js прописали название сайта. в тесте можно заменить на /
+        cy.visit('https://demoqa.com'); //в cypress.config.js прописали название сайта. в тесте можно заменить на /
         //тест, поиск элементов, проверка соответствия кол-во элементов.
         cy.get('.card').should('have.length', expectedMenuItemNames.length).each(($el, idx) => {
             //проверка фактического и ожидаемого результата
@@ -23,7 +23,7 @@ describe('First test DemoQA', () => {
     })
     // второй способ теста с .should, .each
     it('Verification menu item names part 2', () => {
-        cy.visit('/')
+        cy.visit('https://demoqa.com')
         cy.get('.card')
             .should('have.length', expectedMenuItemNames.length)
             .each((el, idx) => {
@@ -34,7 +34,7 @@ describe('First test DemoQA', () => {
 
     //третий способ теста (через промис)
     it('Verification menu item names part 3', () => {
-        cy.visit('/')
+        cy.visit('https://demoqa.com')
         cy.get('.card')
             .should('have.length', expectedMenuItemNames.length)
             .then(($els) => {
@@ -45,8 +45,8 @@ describe('First test DemoQA', () => {
     // форма регистрации
     // it.only (.only перед it означает, что будет выполняться только этот тест)
 
-    it.only('Form filling', () => {
-        cy.visit('/')
+    it('Form filling', () => {
+        cy.visit('https://demoqa.com')
         cy.get('.card:nth-child(2)').click()
         cy.get('.element-group:nth-child(2)>div').click()
         cy.get('#firstName')

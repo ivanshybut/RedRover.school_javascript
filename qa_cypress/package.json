@@ -1,15 +1,14 @@
 {
   "name": "qa_cypress",
   "version": "1.0.0",
-  "description": "### Installing Cypress:",
-  "main": "demoQa.cy.js",
+  "description": "### Для автоматизации тестирования UI с помощью Cypress на JavaScript необходимо выполнить следующие шаги:",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Ivan Shybut",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.11.0"
+    "cypress": "^12.12.0"
   }
 }
